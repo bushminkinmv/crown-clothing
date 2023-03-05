@@ -15,6 +15,8 @@ const App = () => {
   useEffect(() => {
     dispatch(checkUserSession());
   }, []);
+
+  console.log(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
   return (
     <Routes>
       <Route path='/' element={<Navigation />}>
